@@ -8,19 +8,69 @@
     <h1 id="test">Мой первый заголовок</h1>
     <!-- <p>Мой первый абзац</p> -->
     <script>
-        // let age = 50;
+        // // let age = 50;
 
-        // console.log(typeof typeof age);
-        let myAge = prompt("Сколько вам лет?");
+        // // console.log(typeof typeof age);
+        // let myAge = prompt("Сколько вам лет?");
 
-        alert("Вам полных" + " " + myAge + " " + "лет");
-        alert(`Вам полных ${myAge} лет`)
-        // alert(myAge > 18 ?
-        // "Совершеннолетний" : 
-        //   myAge > 0 ? 
-        //     "Несовершеннолетний" : 
-        //     "Еще в планах")
-        фдуке
+        // alert("Вам полных" + " " + myAge + " " + "лет");
+        // alert(`Вам полных ${myAge} лет`)
+        // // alert(myAge > 18 ?
+        // // "Совершеннолетний" : 
+        // //   myAge > 0 ? 
+        // //     "Несовершеннолетний" : 
+        // //     "Еще в планах")
+        
+
+        const numbers = [10, 2, 3, 4, 32, 54, 65, 12, 5];
+        let isCheck = false;
+
+        for (let i = 0; i < numbers.length; i++) {
+          let answer = Math.pow(numbers[i], 2);
+          if(i === numbers.length - 1) {
+            break;
+            isCheck = true
+          };
+          console.log(answer);
+        }
+
+
+        if (isCheck === false) {
+          alert("Поиск не принес успехов")
+        }
+
+        const people = [
+          {
+            name: "user1",
+            img: "http:sdjflksd",
+            sername: "userovich"
+          },
+          {
+            name: "user2",
+            img: "http:sdjflksd",
+            sername: "userovich"
+          },
+          {
+            name: "user3",
+            img: "http:sdjflksd",
+            sername: "userovich"
+          }
+        ]
+
+        // people[1].name = "test"
+
+        // alert(people[1].name)
+
+
+        // people = []
+        // console.log(people);
+
+        // let i = 0;
+        // while(i < 10) {
+        //   ...
+        //   ...
+        //   i++
+        // }
 
     </script>
   </body>
