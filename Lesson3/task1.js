@@ -28,3 +28,7 @@ for(let i = 0; i < data.length; i++) {
 if (isCheck === false) {
     alert("Ничего не найдено или совподений нет")
 }
+
+
+
+checkName(data, "Ashton")

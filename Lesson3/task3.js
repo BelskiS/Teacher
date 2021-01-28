@@ -41,7 +41,7 @@ for (let j = 0; j < products.length; j++) {
     moneyForOneDay += products[j].count * products[j].price;
 }
 
-let days = money / moneyForOneDay < 1 ? 0 : Math.round(money / moneyForOneDay);
+let days = money / moneyForOneDay < 1 ? 0 : Math.floor(money / moneyForOneDay);
 let balance = money % moneyForOneDay;
 
 console.log(`Cемья Петровичей на указаннуюу сумму сможит прожить ${days} дней ${moneyForOneDay}`)

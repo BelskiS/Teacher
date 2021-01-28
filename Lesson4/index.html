@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+</head>
+  <body>
+    <h1 id="test">Мой первый заголовок</h1>
+    <!-- <p>Мой первый абзац</p> -->
+    <script>
+        const numbers1 = [10, 2, 3, 4, 32, 54, 65, 12, 5];
+
+        function getPowNumbers(numbersArray) {
+          for (let i = 0; i < numbersArray.length; i++) {
+            debugger;
+            let answer = Math.pow(numbersArray[i], 2);
+            console.log(answer);
+          }
+        }
+
+        getPowNumbers(numbers1);
+
+        //es5 до 2015
+        // function sum(firstValue, secondValue) {
+        //   return firstValue + secondValue;
+        // }
+
+        //после 2015
+        // const sum = (firstValue, secondValue) => firstValue + secondValue;
+
+        // let answer = sum(10, 20);
+        // console.log(answer);
+
+        // const getName = name => name;
+
+        // alert(getName("Gregory"));
+
+
+        // isPalindrom("ШаЛАШ") // true
+
+    </script>
+  </body>
+</html>
