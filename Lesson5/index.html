@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+</head>
+  <body>
+    <h1 id="test">Мой первый заголовок</h1>
+    <!-- <p>Мой первый абзац</p> -->
+    <script>
+
+      // const userData = ['Ivan', 'Ivanov', 23];
+      // const [firstName, lastName, age] = userData;
+      
+      // let firstName = userData[0];
+      // let lastName = userData[1];
+      // let age = userData[2];
+
+      // console.log(firstName);
+
+      // const animal = {
+      //   name: "lyon",
+      //   weight: 45,
+      //   isHealthy: true,
+      //   isAche: false,
+      //   warden: {
+      //     name: "Petr",
+      //     age: 72
+      //   } 
+      // }
+
+      // const { isHealthy: helth, name, weight, warden: { age, name: wardenName }, warden} = animal;
+
+      // const isHealthy = animal.isHealthy;
+      // const weight = animal.weight;
+
+      // console.log(wardenName);
+
+      // // console.log(helth)
+
+      // const userData = ['Ivan', 'Ivanov', '23', 100];
+
+      // let [firstName, , ,age] = userData;
+
+      // console.log(firstName + age)
+
+      // const animal = {
+      //   name: "lyon",
+      //   weight: 45,
+      //   isHealthy: true,
+      //   isAche: false,
+      //   warden: {
+      //     name: "Petr",
+      //     age: 72
+      //   } 
+      // }
+
+      // const reachAnimal = {
+      //   cost: 100000,
+      //   ...animal
+      // }
+
+      // const {name, ...shortAnimalData} = animal;
+
+      // // console.log(shortAnimalData);
+
+
+      // const array = [1, 2, 4, 5, 6, 50]
+      // const [first, second, ...short] = array;
+      // const shortArray = short;
+
+      // const secondArray = ['one', 'two', 'three', 'ten']
+
+      // const summaryArray = [...array, ...secondArray];
+
+      // console.log(summaryArray);
+
+      // let userName = "Vasia";
+      // let user = {
+      //   userName,
+      //   age: 19
+      // };
+
+      const smth = () => {
+        return 1 + 1;
+      }
+      const array = [1, 2, 4, 5, 6, 50];
+
+      array.forEach((number, index) => {
+        debugger;
+        array[index] = Math.pow(number, 2);
+      })
+
+      console.log(array);
+
+    </script>
+  </body>
+</html>
