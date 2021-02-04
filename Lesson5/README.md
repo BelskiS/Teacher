@@ -3,7 +3,7 @@
 # Lesson 5
 -------------------------
 
-Ссылка на презентацию https://www.mediafire.com/file/5lm9ldys1gkw7dx/lesson_5.pptx/file
+Ссылка на презентацию https://disk.yandex.by/d/3cK95AoZ545CAw
 
 Создаем папку Lesson5
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Заголовок</title>
+    </head>
+    <body>
+        <h1 id="test">Мой первый заголовок</h1>
+        <!-- <p>Мой первый абзац</p> -->
+        <script>
+            let usersAge = [
+                {
+                    name: "Ivanov",
+                    age: 19,
+                },
+                {
+                    name: "Petrov",
+                    age: 17,
+                },
+                {
+                    name: "Sidorov",
+                    age: 21,
+                },
+            ];
+
+            const notYangestPersons = usersAge.filter(person => {
+              return person.age >= 18;
+            })
+
+            const formattedByYangest = usersAge.map(person => {
+              return {
+                ...person,
+                isYangest: person.age >= 18 ? false : true,
+              }
+            })
+
+            // const formattedByYangest = usersAge.map(person => (
+            //   {
+            //     ...person,
+            //     isYangest: person.age >= 18 ? false : true,
+            //   }
+            // ))
+
+            console.log(formattedByYangest);
+
+
+
+            //есть массив с разными значениями, строки или числа 
+            // [43, 54, 12, 'text', 'TeXt', 54, "54", 0, "car", "CAR", 43]
+
+
+            // функция примет данный массив и вернет массив объектов:
+            // [
+            //   {
+            //     value: 43,
+            //     count: 2,
+            //   }
+            // ]
+
+
+
+            // первый пункт вам нужно подготовить новый массив с объектами
+            // число объектов = числу эллементов в представленном массиве
+            // сначала вам нужно выяснить число повторений для каждого элемента массива  + не забываем уитывать регистры Car = CAR 
+            // придумать способ как временно хранить данные по числу повторений эелемента
+            // потом эти данные закидывать в объект массива (пользуемся map)
+            
+            // **********       + alert вывести самое повторяющиеся значение  ДОПОЛНИТЕЛЬНО
+
+        </script>
+    </body>
+</html>
