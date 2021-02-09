@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Заголовок</title>
+    </head>
+    <body>
+        <h1 id="test">Мой первый заголовок</h1>
+        <!-- <p>Мой первый абзац</p> -->
+        <script>
+            function getCounter() {
+                let counter = 0;
+                return function test() {
+                    return counter++;
+                };
+            }
+            const count = getCounter();   /// Причина замыкания в том, что (как мы говорили, для каждой 
+            //функции создается своя область видимости) count при вызове создает новую область видимости для getCounter, но у нее уже есть своя область видимости) и п
+            //роисходит замыкание функции count на область видимости getCounter. При каждом новом вызове мы юзаем одну и ту же область видимости getCounter
+            // можно представить, что для метода count, область видимости getCounter глобальна (но это из-за замыкания у count на этой области)
+            console.log(count()); // 0
+            console.log(count()); // 1
+            console.log(count()); // 2
+
+
+            //тесты
+
+            const summ = (first, second) => {
+                
+                return first + second
+            };
+
+            const checkSummFunction = (answer, compareValue) => {
+                return answer === compareValue
+            }
+
+
+            console.log(checkSummFunction(summ(10, 20), 30)) // true 10 + 20 = 30
+
+            console.log(checkSummFunction(summ(10, '20'), false)) // false
+        </script>
+    </body>
+</html>

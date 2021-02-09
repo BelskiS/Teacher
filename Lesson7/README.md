@@ -9,6 +9,7 @@
 
 Посмотреть важный видосик по CallStack https://www.youtube.com/watch?v=8aGhZQkoFbQ
 И ту статью https://habr.com/ru/company/ruvds/blog/340194/
+И тут https://javascript.ru/basic/closure
 
 # Домашнее задание 2
 
