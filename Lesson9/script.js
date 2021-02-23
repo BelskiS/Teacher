@@ -17,8 +17,8 @@ const visitors = [
 ]
 
 const createWrapper = (node) => {
-    const wrapper = document.createElement(node);
-    document.body.append(wrapper);
+    const wrapper = document.body.append(document.createElement(node));
+    
     return wrapper;
 }
 
